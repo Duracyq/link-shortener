@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-  const url = 'https://www.google.com/search?q=cats'\
+  const url = 'https://www.google.com/search?q=cats'
 
 
   const shortenUrl = async () => {
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <form method='post'>
         <input id="inputUrl" />
-        <button type="submit" onClick={this.shortenUrl}>SHORTEN</button>
+        <button type="submit" onClick={shortenUrl}>SHORTEN</button>
       </form>
 
     </div>
