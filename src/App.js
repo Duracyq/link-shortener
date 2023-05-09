@@ -5,12 +5,14 @@ function App() {
 
 
   const shortenUrl = async () => {
-    const response = fetch("https://gotiny.cc/api", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ input: url }),
-    })
-    console.log(response)
+    try {
+      const response = await fetch("https://gotiny.cc/api", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ input: url }),
+      })
+      console.log(response)
+    } catch (e) {console.error(e)}
   }
 
 
